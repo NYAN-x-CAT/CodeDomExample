@@ -24,7 +24,7 @@ namespace CodeDomExample
         {
             if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtCountry.Text))
             {
-                MessageBox.Show("Enter host and port!", "Error");
+                MessageBox.Show("All fields are required", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
             else
