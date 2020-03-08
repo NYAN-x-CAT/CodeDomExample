@@ -33,7 +33,7 @@ namespace CodeDomExample
                 string source = Properties.Resources.Source;
 
                 // replace values
-                source = source.Replace("#name", txtName.Text);
+                source = source.Replace("#name", txtName.Text); // search and replace a string "#name" from Resources/Source.cs
                 source = source.Replace("#country", txtCountry.Text);
 
                 using (SaveFileDialog saveFile = new SaveFileDialog())
